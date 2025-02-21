@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-user',
   imports: [],
   templateUrl: './user.component.html',
-  styleUrl: './user.component.css'
+  styleUrl: './user.component.css',
+  standalone: true
 })
 export class UserComponent {
   user = {
