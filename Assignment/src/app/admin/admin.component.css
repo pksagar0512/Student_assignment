@@ -1,0 +1,32 @@
+.admin { 
+    background-color: #f4a261; /* Warm Orange */
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 320px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .admin h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #6d4c41;
+  }
+  
+  .admin p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #4e342e;
+  }
+  
+  .admin:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    background-color: #e76f51; /* Slightly darker orange on hover */
+    color: white;
+  }
+  
