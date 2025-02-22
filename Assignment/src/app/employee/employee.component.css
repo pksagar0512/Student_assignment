@@ -1,0 +1,30 @@
+.employee {
+    background-color: #ffcc80; /* Light Orange */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .employee h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #5d4037;
+  }
+  
+  .employee p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #3e2723;
+  }
+  
+  .employee:hover {
+    transform: scale(1.08);
+    transition: 0.3s ease-in-out;
+  }
+  
