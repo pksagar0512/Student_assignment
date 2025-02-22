@@ -1,0 +1,32 @@
+.employee-card {
+  width: 50%;  /* Reduced width */
+  max-width: 400px;  /* Prevents it from getting too wide */
+  margin: 20px auto;  /* Centers the card */
+  border: 2px solid #007bff;  /* Blue border */
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f0f8ff;  /* Light blue background */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  text-align: center;  /* Aligns text */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.employee-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employee-card {
+      width: 70%;
+      padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-card {
+      width: 90%;
+      padding: 10px;
+  }
+}
