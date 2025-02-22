@@ -1,8 +1,20 @@
-<div class="admin-dashboard">
-    <h2>Admin Dashboard</h2>
-    <ul style="list-style-type:none;">
-        <li><a href="#">Manage Users</a></li>
-        <li><a href="#">View Reports</a></li>
-        <li><a href="#">System Settings</a></li>
-    </ul>
-</div>
+<div class="admin-container">
+    <h1>{{title}}</h1>
+    
+    <div class="dashboard-stats">
+      <div class="stat-card">
+        <h3>Total Users</h3>
+        <p>{{adminData.totalUsers}}</p>
+      </div>
+      
+      <div class="stat-card">
+        <h3>Active Users</h3>
+        <p>{{adminData.activeUsers}}</p>
+      </div>
+      
+      <div class="stat-card">
+        <h3>Pending Requests</h3>
+        <p>{{adminData.pendingRequests}}</p>
+      </div>
+    </div>
+  </div>
