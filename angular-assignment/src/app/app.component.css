@@ -1,0 +1,27 @@
+.app-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  

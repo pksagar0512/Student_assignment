@@ -1,0 +1,13 @@
+<div class="app-container">
+  <h1>Welcome to Angular Assignment</h1>
+  <nav>
+    <a [routerLink]="['/employee']" routerLinkActive="active">Employee</a> |
+    <a [routerLink]="['/user']" routerLinkActive="active">User</a> |
+    <a [routerLink]="['/admin']" routerLinkActive="active">Admin</a>
+  </nav>
+</div>
+
+  
+  <!-- This is where the selected component will appear -->
+  <router-outlet></router-outlet>
+  
