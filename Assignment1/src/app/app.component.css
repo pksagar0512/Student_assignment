@@ -1,0 +1,66 @@
+/* 🌑 Light Black & White Theme */
+.app-container {
+    background: #222; /* Dark Gray Background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 🎨 Title Styling */
+.app-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+/* 📦 Components Wrapper */
+.components-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 📋 Card Styling for Employee, User, Admin */
+.card {
+    background: #f8f8f8; /* White Cards */
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 🎭 Profile Titles */
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 🖋 Text Styling */
+.card p {
+    font-size: 1rem;
+    color: #444;
+    font-weight: bold;
+}
+
+/* ✨ Subtle Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
