@@ -1,0 +1,39 @@
+.employee-card {
+    background: linear-gradient(135deg, #4ecdc4, #88dac7);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .employee-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.5);
+  }
+  
+  .employee-card h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .employee-card .info {
+    font-size: 16px;
+  }
+  
+  .employee-card .icon {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+  }
+  
+  .employee-card:hover .icon {
+    opacity: 1;
+  }
