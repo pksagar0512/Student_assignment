@@ -1,0 +1,21 @@
+.employee-card {
+    background-color: #f0f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+  }
+  
+  .employee-info {
+    margin-top: 15px;
+  }
+  
+  h2 {
+    color: #2c5282;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #4a5568;
+  }
