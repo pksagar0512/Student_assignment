@@ -1,0 +1,38 @@
+<div class="employee-container">
+    <div class="header">
+      <h1>Employee Management</h1>
+      <button class="add-btn" (click)="addEmployee()">Add Employee</button>
+    </div>
+  
+    <div class="employee-list">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Department</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.position}}</td>
+            <td>{{employee.department}}</td>
+            <td>
+              <span [class]="'status-badge ' + employee.status.toLowerCase()">
+                {{employee.status}}
+              </span>
+            </td>
+            <td class="actions">
+              <button class="edit-btn" (click)="editEmployee(employee.id)">Edit</button>
+              <button class="delete-btn" (click)="deleteEmployee(employee.id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

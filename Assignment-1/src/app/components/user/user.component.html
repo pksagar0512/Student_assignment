@@ -1,0 +1,35 @@
+<div class="user-container">
+    <div class="header">
+      <h1>User Management</h1>
+      <div class="header-actions">
+        <input type="text" placeholder="Search users..." class="search-input">
+        <button class="add-btn">Add New User</button>
+      </div>
+    </div>
+  
+    <div class="users-grid">
+      <div class="user-card" *ngFor="let user of users">
+        <div class="user-header">
+          <div class="user-avatar">
+            {{ user.name.charAt(0) }}
+          </div>
+          <span [class]="'status-badge ' + user.status.toLowerCase()">
+            {{ user.status }}
+          </span>
+        </div>
+        
+        <div class="user-info">
+          <h3>{{ user.name }}</h3>
+          <p class="email">{{ user.email }}</p>
+          <p class="role">{{ user.role }}</p>
+          <p class="course">{{ user.course }}</p>
+        </div>
+  
+        <div class="user-actions">
+          <button class="view-btn" (click)="viewUser(user.id)">View</button>
+          <button class="edit-btn" (click)="editUser(user.id)">Edit</button>
+          <button class="delete-btn" (click)="deleteUser(user.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
